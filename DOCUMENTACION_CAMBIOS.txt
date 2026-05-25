@@ -1,0 +1,71 @@
+DOCUMENTACIÓN DE CAMBIOS — PROYECTO MSA PAGINA
+Fecha: 25/05/2026
+
+Resumen de cambios realizados (rutas incluidas):
+
+1. SEPARACIÓN DE CSS POR PÁGINA
+--------------------------------
+- css/pages.css: Ahora solo contiene estilos compartidos de hero y breadcrumb.
+- css/servicios.css: Estilos exclusivos para servicios/index.php.
+- css/locales.css: Estilos exclusivos para locales/index.php.
+- css/contacto.css: Estilos exclusivos para contacto/index.php.
+- css/nosotros.css: Estilos exclusivos para nosotros/index.php.
+- Cada página interna enlaza su propio CSS además de pages.css.
+
+2. MEGA MENÚ DE MARCAS EN NAVBAR
+---------------------------------
+- includes/header.php:
+  - El dropdown de MARCAS ahora muestra una lista de marcas.
+  - Al pasar el mouse por cada marca, aparece un panel lateral (flyout) con 3 modelos destacados (imagen + nombre).
+  - Ejemplo de estructura:
+    <div class="marca-flyout-item">
+      <a href="/msa_pagina/marcas/baic/index_baic.php" class="marca-flyout-link">BAIC</a>
+      <div class="marca-flyout-panel">
+        <div class="marca-flyout-grid">
+          <a class="modelo-prev-card">...</a>
+          ...
+        </div>
+      </div>
+    </div>
+  - Cada panel muestra 3 modelos por marca (por ahora, todos usan la misma imagen de prueba de la marca).
+
+- css/style.css:
+  - Se agregó todo el CSS para el flyout de marcas (panel lateral, grid de modelos, responsive, etc).
+  - El panel aparece a la izquierda de la lista de marcas.
+  - El grid de modelos es de 3 columnas.
+  - Se ajustó el border-radius y el borde rojo para el flyout a la izquierda.
+  - Se redujo la altura de las imágenes de modelo a 72px.
+  - Se actualizó la versión del CSS en header.php para romper caché.
+
+3. IMÁGENES DE MARCAS Y MODELOS
+-------------------------------
+- img/[marca]/[marca]_pruebas.jpg (o .jpeg): Imagen de prueba por cada marca.
+- Todas las tarjetas de modelo en el flyout usan la imagen de prueba de la marca.
+- Cuando tengas imágenes reales de cada modelo, solo reemplaza la URL en el style de cada tarjeta.
+
+4. OTROS AJUSTES
+----------------
+- Se corrigió la especificidad de los selectores CSS para que el mega menú y el flyout no sean sobreescritos por reglas globales.
+- Se agregó control de responsive para que el flyout no aparezca en móvil.
+
+
+RUTAS DE ARCHIVOS MODIFICADOS:
+------------------------------
+- /msa_pagina/css/pages.css
+- /msa_pagina/css/servicios.css
+- /msa_pagina/css/locales.css
+- /msa_pagina/css/contacto.css
+- /msa_pagina/css/nosotros.css
+- /msa_pagina/css/style.css
+- /msa_pagina/includes/header.php
+- /msa_pagina/img/[marca]/[marca]_pruebas.jpg
+
+
+NOTAS:
+------
+- Si agregas más modelos por marca, solo duplica el bloque <a class="modelo-prev-card">...</a> dentro del grid de cada marca en header.php.
+- Si cambias imágenes, solo actualiza la URL en el atributo style de cada tarjeta.
+- El flyout lateral solo aparece en escritorio, no en móvil.
+
+
+Fin de documentación.
