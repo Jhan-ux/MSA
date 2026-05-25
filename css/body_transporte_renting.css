@@ -1,0 +1,75 @@
+/* Estilos para la sección de Transporte y Renting */
+.transport-section {
+    padding: 60px 24px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.transport-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 32px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #cc1111;
+    display: inline-block;
+}
+.transport-layout {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    gap: 48px;
+    align-items: start;
+}
+.transport-featured__img-wrap {
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.transport-featured__badge {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #cc1111;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 14px 8px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.transport-featured__img {
+    flex: 1;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    background-color: #d0d0d0;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.transport-featured__img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-color: #cc1111;
+}
+.transport-featured__content {
+    padding: 0 12px;
+}
+.transport-featured__content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 8px;
+}
+.transport-featured__content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+.transport-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

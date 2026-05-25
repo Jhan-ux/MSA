@@ -8,7 +8,7 @@
     <div class="page-hero__content">
         <span class="page-hero__badge">MSA Automotriz</span>
         <h1 class="page-hero__title">QUI&Eacute;NES SOMOS</h1>
-        <p class="page-hero__sub">M&aacute;s de 15 a&ntilde;os siendo el concesionario de confianza en Cajamarca.</p>
+        <p class="page-hero__sub">M&aacute;s de 19 a&ntilde;os siendo el concesionario de confianza en Cajamarca.</p>
     </div>
 </div>
 
@@ -24,7 +24,7 @@
     <div class="nosotros-historia__texto">
         <span class="nosotros-historia__label">Nuestra Historia</span>
         <h2 class="nosotros-historia__title">
-            M&aacute;s de <span>15 a&ntilde;os</span><br>moviendo a Cajamarca
+            M&aacute;s de <span>19 a&ntilde;os</span><br>moviendo a Cajamarca
         </h2>
         <p class="nosotros-historia__text">
             MSA Automotriz naci&oacute; en Cajamarca con un prop&oacute;sito claro: brindar acceso a veh&iacute;culos de calidad con una atenci&oacute;n cercana y honesta. Desde nuestros inicios como un peque&ntilde;o distribuidor local, hemos crecido hasta convertirnos en el concesionario multimarca de referencia de la regi&oacute;n.
@@ -47,7 +47,7 @@
 <div class="nosotros-stats">
     <div class="nosotros-stats__inner">
         <div class="stat-item">
-            <div class="stat-item__number">15+</div>
+            <div class="stat-item__number">19+</div>
             <div class="stat-item__label">A&ntilde;os de experiencia</div>
         </div>
         <div class="stat-item">

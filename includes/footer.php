@@ -6,7 +6,7 @@
             <a href="/msa_pagina/index.php">
                 <img src="/msa_pagina/img/logo_msa.jpeg" alt="MSA Automotriz Logo" class="footer-logo">
             </a>
-            <p class="footer-about">Concesionaria l&iacute;der en Cajamarca con m&aacute;s de 15 a&ntilde;os brindando las mejores marcas del mercado automotriz.</p>
+            <p class="footer-about">Concesionaria l&iacute;der en Cajamarca con m&aacute;s de 19 a&ntilde;os brindando las mejores marcas del mercado automotriz.</p>
             <div class="footer-social">
                 <a href="#" class="footer-social__link" aria-label="Facebook" target="_blank" rel="noopener">
                     
@@ -89,6 +89,8 @@
         </div>
 
     </div>
+
+     <!-- Libro de reclamaciones(implementar en el footer con una imagen en la parte central) -->
 
     <!-- Barra inferior de copyright -->
     <div class="footer-bottom">
